@@ -123,20 +123,20 @@ export default {
       .sortBy('datetime', 'desc')
       .limit(5)
       .fetch()
-    const featured = await $content('blog', params.slug)
-      .where({ featured: 'Featured' })
-      .sortBy('datetime', 'desc')
-      .limit(3)
-      .fetch()
-    const featuredone = await $content('blog', params.slug)
-      .where({ featured: 'Featured' })
-      .sortBy('datetime', 'desc')
-      .limit(1)
-      .fetch()
+    // const featured = await $content('blog', params.slug)
+    //   .where({ featured: 'Featured' })
+    //   .sortBy('datetime', 'desc')
+    //   .limit(3)
+    //   .fetch()
+    // const featuredone = await $content('blog', params.slug)
+    //   .where({ featured: 'Featured' })
+    //   .sortBy('datetime', 'desc')
+    //   .limit(1)
+    //   .fetch()
     return {
       articles,
-      featured,
-      featuredone,
+      // featured,
+      // featuredone,
     }
   },
   methods: {

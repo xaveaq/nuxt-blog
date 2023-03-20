@@ -1,9 +1,9 @@
 ---
-title: Cafe24 연동 테스트
-description: 단일 GTM Container ID를 복수의 사이트에 구축하여 연동하기.
-slug: test
+title: Cafe24 연동 테스트2
+description: 단일 GTM Container ID를 복수의 사이트에 구축하여 연동하기2.
+slug: second-jam
 author: xaveaq
-category: test
+category: ga4
 datetime: 2023. 03. 20. 09:00
 language: Korean
 featured: None
