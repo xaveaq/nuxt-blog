@@ -133,10 +133,18 @@ export default {
       .sortBy('datetime', 'desc')
       .limit(1)
       .fetch()
+    const ga = await this.ga
+      .page({
+        page: '/',
+        title: 'Home page',
+        location: window.location.href,
+      })
+      .fetch()
     return {
       articles,
       featured,
       featuredone,
+      ga,
     }
   },
   methods: {
