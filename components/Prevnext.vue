@@ -8,7 +8,7 @@
             <nuxt-link v-else to='/'>
                         <div class="text-center md:text-left text-gray-500 group-hover:text-cherrylight transition duration-500">No Previous Post</div>
                         <div class="hidden md:block text-gray-700 font-medium mt-1 group-hover:text-cherry transition duration-500 text-base">
-                            <span>홈으로 돌아가기</span>
+                            <span>Home</span>
                         </div>
             </nuxt-link>
         </div>
@@ -20,7 +20,7 @@
             <nuxt-link v-else to='/'>
                 <div class="text-center md:text-right text-gray-500 group-hover:text-cherrylight transition duration-500">No Next Post</div>
                 <div class="hidden md:block text-right text-gray-700 font-medium mt-1 group-hover:text-cherry transition duration-500 text-base">
-                    <span>홈으로 돌아가기</span>
+                    <span>Home</span>
                 </div>
             </nuxt-link>
         </div>

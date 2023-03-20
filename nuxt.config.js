@@ -4,44 +4,42 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Haram's Blog",
+    title: '根性',
     htmlAttrs: {
       lang: 'ko',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "🤍 Haram's Blog" },
+      { hid: 'description', name: 'description', content: '根性' },
       { name: 'format-detection', content: 'telephone=no' },
       // Twitter
       // Test on: https://cards-dev.twitter.com/validator
       {
         hid: 't-type',
         name: 'twitter:card',
-        content: 'summary'
+        content: 'summary',
       },
       // Open Graph
       // Test on: https://developers.facebook.com/tools/debug/
-      { hid: 'og:site_name', property: 'og:site_name', content: "Haram's Blog" },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: 'https://raw.githubusercontent.com/givemetarte/blog/main/assets/images/thumbnail.png'
-      },
-      {
-        hid: 'og:image:secure_url',
-        property: 'og:image:secure_url',
-        content: 'https://raw.githubusercontent.com/givemetarte/blog/main/assets/images/thumbnail.png'
-      },
-      {
-        hid: 'og:image:alt',
-        property: 'og:image:alt',
-        content: 'Logo Image'
-      }
+      // { hid: 'og:site_name', property: 'og:site_name', content: "根性" },
+      // {
+      //   hid: 'og:image',
+      //   property: 'og:image',
+      //   content: 'https://raw.githubusercontent.com/givemetarte/blog/main/assets/images/thumbnail.png'
+      // },
+      // {
+      //   hid: 'og:image:secure_url',
+      //   property: 'og:image:secure_url',
+      //   content: 'https://raw.githubusercontent.com/givemetarte/blog/main/assets/images/thumbnail.png'
+      // },
+      // {
+      //   hid: 'og:image:alt',
+      //   property: 'og:image:alt',
+      //   content: 'Logo Image'
+      // }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon-cherry.ico' },
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon-cherry0.ico' }],
   },
 
   loading: { color: '#c06c84' },
@@ -55,13 +53,11 @@ export default {
   css: [
     // add tailwind.css
     '@/assets/css/tailwind.css',
-    '~/assets/css/fonts.css'
+    '~/assets/css/fonts.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '@/plugins/jsonld.js',
-  ],
+  plugins: ['@/plugins/jsonld.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -77,38 +73,23 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    "@nuxtjs/sitemap",
+    '@nuxtjs/sitemap',
   ],
 
   sitemap: {
-    hostname: 'https://blog.harampark.com',
+    hostname: 'https://xaveaq.netlify.app',
     gzip: true,
-    routes: [
-      '/blog/blazegraph-named-graph/',
-      '/blog/dask-read-csv/',
-      '/blog/korea-admin-codes/',
-      '/blog/nuxt-tailwind-blog/',
-      '/blog/opensource-graphdb-review/',
-      '/blog/pymysql-encoding-error/',
-      '/blog/seo-schema-jsonld/',
-      '/blog/rdflib-tutorial-dcat-1',
-      '/blog/rdflib-tutorial-dcat-2',
-      '/blog/python-sparql-endpoint',
-      '/blog/resolve-cors-error',
-      '/blog/vue-deploy-subdirec',
-      '/blog/modal-window-vue',,
-      '/blog/ubuntu-docker-compose-error'
-    ]
+    routes: ['/blog/ga4/', '/blog/test/'],
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
     markdown: {
       prism: {
-        theme: 'prism-themes/themes/prism-one-light.css'
-      }
+        theme: 'prism-themes/themes/prism-one-light.css',
+      },
     },
-    liveEdit: false
+    liveEdit: false,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -1,8 +1,8 @@
 <template>
   <div class="max-w-4xl mx-auto">
     <div class="px-5">
-        <div class="pt-10 md:pt-12 text-xl md:text-2xl text-gray-700 font-semibold mb-2">지식그래프</div>
-        <div class="text-gray-600 font-normal text-sm md:text-base">지식그래프 주제를 담은 글 모음입니다.</div>
+        <div class="pt-10 md:pt-12 text-xl md:text-2xl text-gray-700 font-semibold mb-2">Google Analytics 4</div>
+        <div class="text-gray-600 font-normal text-sm md:text-base">Google Analytics 4, Google Tag Manager, and Looker Studio</div>
     </div>
 
     <div class="max-w-4xl grid grid-cols-1 md:grid-cols-1 mt-11 md:mt-12 mb-8 md:mb-12">
@@ -31,7 +31,7 @@
 export default {
   async asyncData({ $content, params }) {
     const articles = await $content('blog', params.slug)
-      .where({category: 'Knowledge Graph'})
+      .where({category: 'ga4'})
       .sortBy("datetime", "desc")
       .fetch();
     return {
@@ -39,14 +39,14 @@ export default {
     }
   },
   head: {
-    title: 'Knowledge Graph | Articles',
+    title: 'Google Analytics 4 | Articles',
     htmlAttrs: {
       lang: 'ko'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "Haram's Blog" },
+      { hid: 'description', name: 'description', content: "根性" },
       { name: 'format-detection', content: 'telephone=no' }
     ]
   },

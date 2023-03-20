@@ -6,8 +6,8 @@
   @apply bg-no-repeat;
   background-image: linear-gradient(
     120deg,
-    rgba(245, 102, 114, 0.5) 0%,
-    rgba(245, 102, 114, 0.5) 100%
+    rgba(102, 233, 245, 0.5) 0%,
+    rgba(102, 233, 245, 0.5) 100%
   );
   background-size: 100% 16px;
   background-position: 0 68%;
@@ -19,8 +19,8 @@
   @apply bg-no-repeat;
   background-image: linear-gradient(
     120deg,
-    rgba(245, 102, 114, 0.5) 0%,
-    rgba(245, 102, 114, 0.5) 100%
+    rgba(102, 233, 245, 0.5) 0%,
+    rgba(102, 233, 245, 0.5) 100%
   );
   background-size: 100% 10px;
   background-position: 0 68%;
@@ -32,8 +32,8 @@
   @apply bg-no-repeat;
   background-image: linear-gradient(
     120deg,
-    rgba(245, 102, 114, 0.2) 0%,
-    rgba(245, 102, 114, 0.2) 100%
+    rgba(102, 233, 245, 0.2) 0%,
+    rgba(102, 233, 245, 0.2) 100%
   );
   background-size: 100% 5px;
   background-position: 0 68%;
