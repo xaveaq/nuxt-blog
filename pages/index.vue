@@ -145,6 +145,15 @@ export default {
       return new Date(date).toLocaleDateString('en', options)
     },
   },
+  middleware({ $gtm }) {
+    $gtm.push({
+      event_category: '테스트',
+      event_action: '테스트 - 페이지 뷰',
+      event_label: '테스트 : 렌더링',
+      event: 'test_page_entry',
+      interaction_hit: 1,
+    })
+  },
 }
 </script>
 
