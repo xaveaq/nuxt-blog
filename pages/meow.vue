@@ -4,11 +4,10 @@
       <div
         class="pt-10 md:pt-12 text-xl md:text-2xl text-gray-300 font-semibold mb-2"
       >
-        Google Analytics 4 카테고리
+        천문학적 냥소리 카테고리
       </div>
       <div class="text-gray-300 font-semibold text-sm md:text-base">
-        GA4, Looker Studio 등을 활용한 디지털 마케팅 데이터 분석 포스트
-        모음입니다.
+        상상조차 할 수 없는 냥소리 관련 포스트 모음입니다.
       </div>
     </div>
 
@@ -62,7 +61,7 @@
 export default {
   async asyncData({ $content, params }) {
     const articles = await $content('blog', params.slug)
-      .where({ category: 'Google Analytics 4' })
+      .where({ category: 'Meow' })
       .sortBy('datetime', 'desc')
       .fetch()
     return {
@@ -70,7 +69,7 @@ export default {
     }
   },
   head: {
-    title: 'Google Analytics 4 | Articles',
+    title: 'MEOW | Articles',
     htmlAttrs: {
       lang: 'ko',
     },

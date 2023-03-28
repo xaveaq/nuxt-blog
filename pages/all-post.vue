@@ -1,19 +1,25 @@
 <template>
   <div class="max-w-4xl mx-auto">
-    <!-- <div class="px-5">
-        <div class="pt-10 md:pt-12 text-xl md:text-2xl text-gray-700 font-semibold mb-2">POSTS</div>
-        <div class="text-gray-600 font-normal text-sm md:text-base">Select a topic</div>
-    </div> -->
+    <div class="px-5">
+      <div
+        class="pt-10 md:pt-12 text-xl md:text-2xl text-gray-700 font-semibold mb-2"
+      >
+        POSTS
+      </div>
+      <!-- <div class="text-gray-600 font-normal text-sm md:text-base">
+        Select a topic
+      </div> -->
+    </div>
 
     <div class="px-5 pt-1">
       <nuxt-link :to="{ path: '/ga4' }" replace
         ><span class="tag-btn"
-          >🧐<span class="text-gray-600 text-sm">Google Analytics 4</span></span
+          ><span class="text-gray-600 text-sm">Google Analytics 4</span></span
         ></nuxt-link
       >
-      <nuxt-link :to="{ path: '/test' }" replace
+      <nuxt-link :to="{ path: '/meow' }" replace
         ><span class="tag-btn"
-          >🧪<span class="text-gray-600 text-sm">테스트</span></span
+          ><span class="text-gray-600 text-sm">천문학적 냥소리</span></span
         ></nuxt-link
       >
     </div>
