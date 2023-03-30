@@ -11,13 +11,16 @@
           <img :src="require(`~/assets/images/profile.jpg`)" class="profile" />
         </div>
         <div class="w-2/3 py-8 pl-4">
-          <div class="text-gray-600 font-semibold text-lg md:mb-8">根性</div>
-          <div class="mt-5 text-gray-600 font-normal text-base keepall">
+          <div class="text-gray-600 font-semibold text-lg">根性</div>
+          <div class="text-gray-400 font-thin text-base md:mb-8">
+            힘이 아니라 집념이 위대한 일을 성취시킨다
+          </div>
+          <div class="mt-5 text-green-800 font-normal text-base keepall">
             <a
               href="https://github.com/xaveaq"
               target="_blank"
               class="highlight-xs"
-              >github</a
+              >🟩 Github</a
             >
           </div>
         </div>
